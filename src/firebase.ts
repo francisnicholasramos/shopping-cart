@@ -3,13 +3,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDNUxaIuQiyLyuGc1tQ8LpkOCrfBsCXmfE",
-  authDomain: "shopping-cart-b1710.firebaseapp.com",
-  projectId: "shopping-cart-b1710",
-  storageBucket: "shopping-cart-b1710.firebasestorage.app",
-  messagingSenderId: "218137450891",
-  appId: "1:218137450891:web:9c25281ab1c3e4d125778e",
-  measurementId: "G-73JZYPZWNM"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
