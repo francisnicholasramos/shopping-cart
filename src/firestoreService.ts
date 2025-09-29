@@ -1,4 +1,4 @@
-import {doc, collection, getDocs, setDoc, addDoc} from 'firebase/firestore'
+import {doc, collection, getDocs, setDoc} from 'firebase/firestore'
 import api from './api'
 import {db} from './firebase'
 

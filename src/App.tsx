@@ -19,7 +19,7 @@ const App = () => {
 
 
     console.log('product log', product)
-    const {getImage, setImage} = fireStoreService();
+    const {getImage} = fireStoreService();
 
     useEffect(() => {
         (async () => {
