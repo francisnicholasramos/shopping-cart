@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+   background-color: #f5f5f5;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-redhat {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-sourcecode {
+  font-family: 'Source Code Pro', monospace;
+}
