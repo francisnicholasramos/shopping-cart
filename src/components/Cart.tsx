@@ -3,7 +3,6 @@ import Subtotal from './Subtotal'
 import EmptyCart from './EmptyCart'
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
-import { FaTrashCan } from "react-icons/fa6";
 import type {LocalStorageType} from '../../src/localStorage';
 
 type CartProps = {
@@ -12,7 +11,7 @@ type CartProps = {
     handleSelector: (id: string, operation: 'increment' | 'decrement') => void;
 }
 
-const Cart = ({cartInfo, deleteItem, handleSelector, total}: CartProps) => {
+const Cart = ({cartInfo, deleteItem, handleSelector}: CartProps) => {
     if (cartInfo.length === 0) {
         return <EmptyCart />
     }

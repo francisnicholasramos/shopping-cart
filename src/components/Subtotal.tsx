@@ -1,6 +1,7 @@
 import Button from './Button'
+import type {UnsplashType} from '../../src/api';
 
-const Subtotal = ({total}) => {
+const Subtotal = ({total} : {total: UnsplashType[]}) => {
     const overAllTotal = total.reduce((sum, item) => {
         return sum + item.price * item.cart
     }, 0)

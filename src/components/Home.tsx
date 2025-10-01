@@ -4,9 +4,10 @@ import bg from '../assets/three-coffees.jpg'
 import Button from './Button'
 import { motion } from "framer-motion";
 import { GoDotFill } from "react-icons/go";
+import type {UnsplashType} from '../../src/api';
 import Footer from './Footer'
 
-const Home = ({cards}) => {
+const Home = ({cards} : {cards: UnsplashType[]}) => {
     return (
         <>
             <div className="relative flex flex-col items-center  h-[550px] w-full overflow-hidden">
