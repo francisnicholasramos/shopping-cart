@@ -1,5 +1,3 @@
-# Shopping Cart
+# Shopping Cart (The Odin Project)
 
-Live site: 
-
-TODO: fix ui 
+Live site: https://shopping-cart-vert-delta.vercel.app
