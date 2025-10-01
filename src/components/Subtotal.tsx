@@ -21,10 +21,12 @@ const Subtotal = ({total} : {total: UnsplashType[]}) => {
                 </span>
                 <span className="text-lg text-red-500 font-semibold text-[0.8rem] sm:text-base">${overAllTotal}</span>
             </span>
-            <Button 
-                text="Check Out"
-                className="bg-[#262626] text-[0.8rem] sm:text-base max-w-[100px] sm:max-w-[150px] text-white hover:bg-[#333]"
-            />
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" >
+                <Button 
+                    text="Check Out"
+                    className="bg-[#262626] text-[0.8rem] sm:text-base max-w-[100px] sm:max-w-[150px] text-white hover:bg-[#333]"
+                />
+            </a>
         </div>
     )
 }

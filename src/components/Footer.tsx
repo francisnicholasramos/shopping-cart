@@ -17,22 +17,22 @@ const Footer = () => {
                         <h2 className="text-xl font-bold text-black mb-4">Quick Links</h2>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <a href="/menu" className="hover:underline transition-colors">
+                                <a href="/" className="hover:underline transition-colors">
                                     Menu
                                 </a>
                             </li>
                             <li>
-                                <a href="/about" className="hover:underline transition-colors">
+                                <a href="/" className="hover:underline transition-colors">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="/contact" className="hover:underline transition-colors">
+                                <a href="/" className="hover:underline transition-colors">
                                     Contact
                                 </a>
                             </li>
                             <li>
-                                <a href="/locations" className="hover:underline transition-colors">
+                                <a href="/" className="hover:underline transition-colors">
                                     Locations
                                 </a>
                             </li>
