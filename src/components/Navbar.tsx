@@ -22,7 +22,7 @@ const Navbar = ({cartAmount}: {cartAmount: number}) => {
 
     return (
         <div
-            className={`sticky top-0 z-50 flex justify-around items-center py-2 px-10 w-full text-xl transition-colors duration-500 ${
+            className={`sticky top-0 z-50 flex justify-between items-center py-2 px-10 sm:px-15 w-full text-xl transition-colors duration-500 ${
             scrolled ? "bg-black/70 text-white" : "bg-[#262626] text-[#dedede]"
             }`}
         >

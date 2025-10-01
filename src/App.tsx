@@ -146,7 +146,7 @@ const App = () => {
                 pages={[
                     {
                         element: (
-                            <Home />
+                            <Home cards={product}/>
                         ),
                         path: "/",
                     },

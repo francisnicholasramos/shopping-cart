@@ -24,7 +24,7 @@ const Modal = ({onOpen, onClose, addItem, info, quantity, isAdded, handleSelecto
     return (
         <div 
             className={`
-                fixed inset-0 z-50 flex justify-center items-center 
+                fixed inset-0 z-50 flex justify-center p-2 items-center 
                 bg-black/20
                 `}
                 onClick={handleBackdropClick}
@@ -33,21 +33,23 @@ const Modal = ({onOpen, onClose, addItem, info, quantity, isAdded, handleSelecto
                     className="bg-white rounded-sm p-2 gap-2 w-[500px] h-[300px] flex"
                 >
 
-                    <div className="w-[45%]">
+                    <div className="w-[50%] sm:w-[45%]">
                         <img 
                             src={info?.urls.raw  || ''}
                             className="w-full h-full object-cover"
                         />
                     </div>
 
-                <div className="flex flex-col text-[#333] w-[55%]">
-                    <h2 className="font-semibold">{info?.alt_description || ''}</h2>
-                    <p className="text-[#008000]">$18.50</p>
+                <div className="flex flex-col text-[#333] w-[50%] sm:w-[55%]">
+                    <div className="flex flex-col">
+                        <h2 className="font-semibold">{info?.alt_description || ''}</h2>
+                        <p className="text-[#008000]">${info?.price}</p>
+                    </div>
                     <hr />
-                    <div className="mt-auto flex flex-col justify-end gap-2">
+                    <div className="mt-auto flex flex-col justify-end sm:gap-2">
                         <div className="flex justify-between items-center">
-                            <p className="text-gray-500 w-1/2">Quantity</p>
-                            <div className="flex">
+                            <p className="text-gray-500 w-1/2 hidden sm:block">Quantity</p>
+                            <div className="flex m-auto">
                                 <Button 
                                     onClick={() => handleSelector('decrement')}
                                     icon={<FaMinus/>} 
@@ -73,7 +75,7 @@ const Modal = ({onOpen, onClose, addItem, info, quantity, isAdded, handleSelecto
                             <p className="text-center italic text-sm font-medium text-blue-500">This item is already in your cart</p>
                         )}
 
-                        <div className="flex gap-2">
+                        <div className="gap-2 flex flex-col md:flex-row">
                             <Button 
                                 text="Go back" 
                                 className="border border-gray-400" 
